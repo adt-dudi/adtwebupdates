@@ -21,3 +21,15 @@ _Avoid_: beginner, career changer, junior
 An Israeli hi-tech employer that engages ADHDoTECH for organizational mapping or manager
 training. The secondary audience.
 _Avoid_: customer, company, employer, client
+
+### Visibility
+
+**Retrieval**:
+An assistant running a live web search while composing an answer and citing an ADHDoTECH
+page. The mechanism this project targets.
+_Avoid_: SEO, ranking, indexing
+
+**Model Memory**:
+An assistant naming ADHDoTECH from training data, without searching. Named to be
+excluded: it is moved by press and third-party citations, not by site work.
+_Avoid_: brand awareness, training presence
