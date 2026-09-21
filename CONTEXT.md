@@ -42,7 +42,13 @@ review, performance review, on-call, Slack. Almost unanswered in Hebrew, and the
 kind of query this project targets.
 _Avoid_: keyword, search term, long-tail
 
-**Clinical Query**:
-A question about diagnosis, medication or legal rights. Saturated in Hebrew by the health
-funds and כל-זכות. Named to be excluded: ADHDoTECH cedes these rather than competing.
-_Avoid_: medical query, health query
+**Institutional Query**:
+A question whose answer is a rule, entitlement or official pathway — rights, diagnosis
+routes, medication regulation. Held in Hebrew by gov.il, כל-זכות and the health funds.
+ADHDoTECH cedes these rather than competing.
+_Avoid_: clinical query, legal query, rights query
+
+**Concept Query**:
+A question asking what an ADHD concept means — קומורבידיות, היפר פוקוס. ADHDoTECH already
+ranks page one on several of these, so they are defended and improved, never ceded.
+_Avoid_: clinical query, educational query, definition query
