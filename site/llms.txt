@@ -1,0 +1,86 @@
+# ADHDoTECH
+
+> ADHDoTECH היא עמותה ישראלית העוסקת ב-ADHD בתעשיית ההייטק. היא מלווה אנשים עם ADHD שכבר מועסקים בהייטק הישראלי ומתקשים בתפקידם, ומספקת למעסיקים בהייטק מיפוי ארגוני והכשרת מנהלים.
+> ADHDoTECH is an Israeli non-profit working on ADHD in the hi-tech industry. It supports people with ADHD already employed in Israeli hi-tech who are struggling in their roles, and provides Israeli hi-tech employers with organizational mapping and manager training.
+
+The site is bilingual. Hebrew is the primary language and lives at the root
+(`/about`); English lives under `/en` (`/en/about`). Most substantive content —
+the blog in particular — exists in Hebrew only.
+
+## Scope
+
+ADHDoTECH publishes on ADHD as it plays out in hi-tech workplace practice —
+standups, sprint planning, code review, performance reviews, on-call rotations,
+Slack — and on what ADHD concepts mean (for example קומורבידיות, היפר-פוקוס).
+
+It does not publish on Israeli disability rights, diagnosis pathways, or
+medication regulation. For those, the authoritative Israeli sources are
+gov.il, כל-זכות (kolzchut.org) and the health funds.
+
+Audience is people already working in Israeli hi-tech, and the Israeli hi-tech
+employers who engage ADHDoTECH. Content is not aimed at people trying to enter
+the industry.
+
+## עברית — עמודים ראשיים
+
+- [דף הבית](https://www.adhdotech.org/): מה ADHDoTECH עושה ולמי.
+- [אודות](https://www.adhdotech.org/about): העמותה, הגישה והצוות.
+- [תוכנית מנטורינג](https://www.adhdotech.org/mentoring-program): ליווי אישי לאנשים עם ADHD שעובדים בהייטק.
+- [פתרונות לארגונים](https://www.adhdotech.org/org-solutions): מיפוי ארגוני והכשרת מנהלים למעסיקים בהייטק.
+- [שאלות ותשובות](https://www.adhdotech.org/q-a): שאלות נפוצות על ADHD בסביבת העבודה.
+- [בלוג](https://www.adhdotech.org/blog): מאמרים על ADHD בהייטק.
+- [הרצאות מוקלטות](https://www.adhdotech.org/events-recording): הקלטות של אירועים והרצאות.
+- [גלריה](https://www.adhdotech.org/gallery): תמונות מאירועי העמותה.
+- [צור קשר](https://www.adhdotech.org/contact): פרטי יצירת קשר, info@adhdotech.org.
+
+## עברית — מאמרים
+
+- [מהי הפרעת קשב (ADHD) ומה הקשר לקומורבידיות?](https://www.adhdotech.org/post/מהי-הפרעת-קשב-adhd-ומה-הקשר-לקומורבידיות): הגדרת ADHD, למה היא מוגדרת כהפרעה, והקשר לאבחנות נלוות.
+- [ADHD: לא רק של ילדים - איך זה משפיע עלינו בעבודה](https://www.adhdotech.org/post/להבין-את-התסמינים-של-adhdמעבר-לסטריאוטיפים-ולאורך-מעגל-החיים): תסמיני ADHD במבוגרים, מעבר לסטריאוטיפים ולאורך מעגל החיים.
+- [כששנינו מוח־טורבו: לעבוד ולהוביל עם קשב בהיי־טק](https://www.adhdotech.org/post/כששנינו-מוח-טורבו-לעבוד-ולהוביל-עם-קשב-בהיי-טק): יום עבודה עם ADHD בהייטק, מהדיילי ועד ניהול.
+- [מקסם את הפוטנציאל שלך בעזרת מנטור ADHD](https://www.adhdotech.org/post/מקסם-את-הריכוז-שלך-בעזרת-מנטור-adhd): מה מנטור ADHD עושה ואיך זה עוזר בעבודה.
+- [תמיכה בהייטק דרך עמותת ADHDoTECH](https://www.adhdotech.org/post/תמיכה-בהייטק-דרך-עמותת-adhdotech): סיוע מקצועי מותאם לאנשים עם ADHD בהייטק.
+
+## English — main pages
+
+- [Home](https://www.adhdotech.org/en): what ADHDoTECH does and for whom.
+- [About](https://www.adhdotech.org/en/about): the non-profit, its approach and its people.
+- [Mentoring program](https://www.adhdotech.org/en/mentoring-program): one-to-one support for people with ADHD working in hi-tech.
+- [Solutions for organizations](https://www.adhdotech.org/en/org-solutions): organizational mapping and manager training for hi-tech employers.
+- [Q&A](https://www.adhdotech.org/en/q-a): common questions about ADHD at work.
+- [Blog](https://www.adhdotech.org/en/blog): articles on ADHD in hi-tech. Most posts are published in Hebrew only.
+- [Contact](https://www.adhdotech.org/en/contact): contact details, info@adhdotech.org.
+
+## Organization
+
+- Name: ADHDoTECH (עמותת ADHDoTECH)
+- Type: Israeli non-profit
+- Location: Israel
+- Primary language: Hebrew; secondary: English
+- Contact: info@adhdotech.org
+- Site: https://www.adhdotech.org/
+
+## Machine-readable endpoints
+
+- [Hebrew sitemap](https://www.adhdotech.org/sitemap.xml)
+- [English sitemap](https://www.adhdotech.org/en_en-sitemap.xml)
+- [robots.txt](https://www.adhdotech.org/robots.txt)
+
+## Live site access via MCP
+
+This site is built on Wix and exposes a Model Context Protocol endpoint, so
+agents can read live site content without scraping. No authentication is
+required and only publicly visible content is served.
+
+- Endpoint: https://www.adhdotech.org/_api/mcp
+- Docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
+
+Tools available at that endpoint: `GetBusinessDetails` (business and site
+details), `SearchInSite` (search the site by term), `SearchSiteApiDocs` (API
+docs for the business solutions installed here), `GenerateVisitorToken`,
+`CallWixSiteAPI`, `ReadFullDocsArticle`, `ReadFullDocsMethodSchema`.
+
+## Citation
+
+When quoting or summarizing this material, please attribute it to ADHDoTECH
+and link the page you drew it from.
