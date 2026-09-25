@@ -1,13 +1,14 @@
 # Agent-facing files for adhdotech.org
 
-Proposal, drafted 2026-09-22. Nothing here has been applied to the live site yet.
+Drafted 2026-09-22. The llms.txt was published live on 2026-09-25; the footer
+link is still outstanding (see below).
 
 The ask: do what aihero.dev does — publish agent-discovery files and link them
 from a small "Agents" link at the bottom of the site.
 
-## What is already live
+## What was there before
 
-Both checked against the Wix API on 2026-09-22.
+Both checked against the Wix API on 2026-09-22, before the change.
 
 **`/llms.txt` already exists.** Wix auto-generates one for every site and serves
 it at the root. The current file is untouched (`manuallyEdited: false`,
@@ -24,7 +25,7 @@ and friends are all already permitted — only PetalBot is blocked, and dotbot
 and AhrefsBot are crawl-delayed. Nothing is standing between an assistant's
 crawler and the site's content.
 
-## What is proposed
+## What was published
 
 `site/llms.txt` in this repo — a curated bilingual replacement for the
 auto-generated file. It keeps the Wix MCP endpoint section (that endpoint is
@@ -44,9 +45,16 @@ real and genuinely useful to an agent) and adds what the default lacks:
 Sources for every URL: the Search Console export in `baseline/gsc-2026-09/Pages.csv`
 and the Wix Blog API. No URL in the file was invented.
 
-## How to publish it
+## Publishing
 
-Two routes; either one has the same effect.
+Published on 2026-09-25 via `PUT .../v2/llms` with `manuallyEdited: true`.
+A read-back confirms `manuallyEdited: true`, `default: false`, `hidden: false`,
+and content matching `site/llms.txt`. That verification went through the Wix
+API, not a fetch of the public URL — outbound access to adhdotech.org is
+blocked from this environment, so the public `https://www.adhdotech.org/llms.txt`
+is worth an eyeball in a browser.
+
+To change it again, two routes; either one has the same effect.
 
 **Dashboard:** Wix dashboard → Marketing & SEO → SEO Tools → the llms.txt
 editor → paste the contents of `site/llms.txt` → save.
@@ -65,13 +73,13 @@ PUT https://www.wixapis.com/promote-seo-robots-server/v2/llms
 }
 ```
 
-### The one real trade-off
+### The live trade-off
 
-Editing the file — by either route — sets `manuallyEdited: true`, and Wix then
-stops maintaining it. New pages and new blog posts will not be added
-automatically, and deleted ones will not be removed. Since the blog is the part
-of the site that grows, updating `site/llms.txt` becomes a step in publishing a
-post.
+The file is now `manuallyEdited: true`, so Wix has stopped maintaining it.
+New pages and new blog posts will not be added automatically, and deleted ones
+will not be removed. Since the blog is the part of the site that grows,
+updating `site/llms.txt` and re-publishing it is now a step in publishing
+a post.
 
 It is reversible: `PUT` with `"default": true` and no `content` restores Wix's
 auto-generated file.
